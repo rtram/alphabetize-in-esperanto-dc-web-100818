@@ -16,8 +16,10 @@ def alphabetize(arr)
   #iterate through given array to replace e_alphabet with ASCII
   arr.collect! do |string|
     string = string.tr(" ", "_")
-    
     string = string.split(//)
+    
+    string.collect! |n|
+      
   end 
       binding.pry
   
