@@ -49,6 +49,6 @@ def alphabetize(arr)
     
     #join array back together
     string = string.join
-    string = string("_", " ")
+    string = string.tr("_", " ")
   end 
 end
