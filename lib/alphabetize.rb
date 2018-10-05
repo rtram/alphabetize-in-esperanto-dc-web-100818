@@ -26,24 +26,24 @@ def alphabetize(arr)
     #join array back together
     string = string.join
   end 
-      binding.pry
   
   #sort strings by ASCII
   arr = arr.sort
   
   #iterate through ASCII to convert back to e_alphabet
   arr.collect! do |string|
-  string = string.tr(" ", "_")
-  string = string.split(//)
-  
-  #convert to ASCII
-  string.collect! do |n|
-    converter[n] 
+    string = string.split(//)
+          binding.pry
+    #convert to ASCII
+    string.collect! do |n|
+      converter.each |key, val|
+        if n == val
+          return key
+        end 
+      end 
+    end 
+    
+    #join array back together
+    string = string.join
   end 
-  
-  #join array back together
-  string = string.join
-end 
-  
-
 end
