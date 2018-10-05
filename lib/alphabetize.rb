@@ -34,15 +34,7 @@ def alphabetize(arr)
   arr.collect! do |string|
     string = string.split(//)
 
-    #convert to ASCII
-    string.collect! do |n|
-      converter.each |key, val|
-        if n == val
-                    binding.pry
-          return key
-        end 
-      end 
-    end 
+
     
     #join array back together
     string = string.join
