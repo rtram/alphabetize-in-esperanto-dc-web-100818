@@ -17,7 +17,7 @@ def alphabetize(arr)
   arr.collect! do |string|
     string = string.tr(" ", "_")
     
-    string.split
+    string = string.split(//)
       binding.pry
   
   end 
