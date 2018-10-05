@@ -23,12 +23,13 @@ def alphabetize(arr)
       converter[n] 
     end 
     
+    #join array back together
     string = string.join
   end 
       binding.pry
   
   #sort strings by ASCII
-  
+  arr.sort
   
   #iterate through ASCII to convert back to e_alphabet
 
