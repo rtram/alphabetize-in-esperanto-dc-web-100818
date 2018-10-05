@@ -2,8 +2,8 @@ require "pry"
 
 def alphabetize(arr)
   # split esperanto alphabet
-  e_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz".split(//)
-  ascii = "ABabcdefghijklmnopqrstuvwxyz".split(//)
+  e_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz_".split(//)
+  ascii = "ABabcdefghijklmnopqrstuvwxyz_".split(//)
   converter = {}
   counter = 0
   
@@ -18,8 +18,9 @@ def alphabetize(arr)
     string = string.tr(" ", "_")
     string = string.split(//)
     
-    string.collect! |n|
-      
+    string.collect! do |n|
+      n 
+        
   end 
       binding.pry
   
