@@ -33,11 +33,12 @@ def alphabetize(arr)
   #iterate through ASCII to convert back to e_alphabet
   arr.collect! do |string|
     string = string.split(//)
-          binding.pry
+
     #convert to ASCII
     string.collect! do |n|
       converter.each |key, val|
         if n == val
+                    binding.pry
           return key
         end 
       end 
