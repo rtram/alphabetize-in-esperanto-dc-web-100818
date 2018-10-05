@@ -21,10 +21,13 @@ def alphabetize(arr)
     string.collect! do |n|
       converter[n] 
     end 
+    
+    string.join
   end 
       binding.pry
   
   #sort strings by ASCII
+  
   
   #iterate through ASCII to convert back to e_alphabet
 
