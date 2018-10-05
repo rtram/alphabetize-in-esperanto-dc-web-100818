@@ -18,10 +18,8 @@ def alphabetize(arr)
     string = string.tr(" ", "_")
     
     string = string.split(//)
-      binding.pry
-  
   end 
-
+      binding.pry
   
   #sort strings by ASCII
   
