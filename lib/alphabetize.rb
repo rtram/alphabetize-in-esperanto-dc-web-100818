@@ -34,7 +34,12 @@ def alphabetize(arr)
   arr.collect! do |string|
     string = string.split(//)
 
-
+    #convert back to e_alphabet
+    string.collect! do |n|
+      converter.each |key, val|
+        binding.pry
+      end 
+    end 
     
     #join array back together
     string = string.join
