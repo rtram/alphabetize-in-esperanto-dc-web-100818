@@ -44,12 +44,11 @@ def alphabetize(arr)
 
     #convert back to e_alphabet
     string.collect! do |n|
-
-        binding.pry
-
+      a2econverter[n]
     end 
     
     #join array back together
     string = string.join
+    string = string("_", " ")
   end 
 end
