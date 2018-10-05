@@ -28,7 +28,7 @@ def alphabetize(arr)
     
     #convert to ASCII
     string.collect! do |n|
-      c2aonverter[n] 
+      e2aconverter[n] 
     end 
     
     #join array back together
