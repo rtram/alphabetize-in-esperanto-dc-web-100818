@@ -18,6 +18,7 @@ def alphabetize(arr)
     string = string.tr(" ", "_")
     string = string.split(//)
     
+    #convert to ASCII
     string.collect! do |n|
       converter[n] 
     end 
