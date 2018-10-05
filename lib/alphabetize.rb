@@ -22,7 +22,7 @@ def alphabetize(arr)
       converter[n] 
     end 
     
-    string.join
+    string = string.join
   end 
       binding.pry
   
