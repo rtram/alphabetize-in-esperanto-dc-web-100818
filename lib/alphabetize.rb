@@ -29,8 +29,21 @@ def alphabetize(arr)
       binding.pry
   
   #sort strings by ASCII
-  arr.sort
+  arr = arr.sort
   
   #iterate through ASCII to convert back to e_alphabet
+  arr.collect! do |string|
+  string = string.tr(" ", "_")
+  string = string.split(//)
+  
+  #convert to ASCII
+  string.collect! do |n|
+    converter[n] 
+  end 
+  
+  #join array back together
+  string = string.join
+end 
+  
 
 end
