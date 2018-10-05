@@ -17,8 +17,8 @@ def alphabetize(arr)
   
   #iterate through e_alphabet and make a hash with ASCII as keys and e_alpha as values
   while i < ascii.length
-    converter[e_alphabet[counter]] = ascii[counter]
-    counter += 1 
+    a2econverter[ascii[i]] = e_alphabet[i]
+    i += 1 
   end 
   
   #iterate through given array to replace e_alphabet with ASCII
@@ -28,7 +28,7 @@ def alphabetize(arr)
     
     #convert to ASCII
     string.collect! do |n|
-      converter[n] 
+      c2aonverter[n] 
     end 
     
     #join array back together
