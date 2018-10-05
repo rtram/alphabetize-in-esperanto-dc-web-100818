@@ -19,8 +19,8 @@ def alphabetize(arr)
     string = string.split(//)
     
     string.collect! do |n|
-      n 
-        
+      converter[n] 
+    end 
   end 
       binding.pry
   
