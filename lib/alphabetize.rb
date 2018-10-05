@@ -4,11 +4,19 @@ def alphabetize(arr)
   # split esperanto alphabet
   e_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz_".split(//)
   ascii = "ABabcdefghijklmnopqrstuvwxyz_".split(//)
-  converter = {}
+  e2aconverter = {}
+  a2econverter ={}
   counter = 0
+  i = 0
   
   #iterate through e_alphabet and make a hash with e_alphabet as keys and ASCII as values
   while counter < e_alphabet.length
+    e2aconverter[e_alphabet[counter]] = ascii[counter]
+    counter += 1 
+  end 
+  
+  #iterate through e_alphabet and make a hash with ASCII as keys and e_alpha as values
+  while i < ascii.length
     converter[e_alphabet[counter]] = ascii[counter]
     counter += 1 
   end 
