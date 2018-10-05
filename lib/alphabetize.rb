@@ -36,9 +36,9 @@ def alphabetize(arr)
 
     #convert back to e_alphabet
     string.collect! do |n|
-      converter.each |key|
+
         binding.pry
-      end 
+
     end 
     
     #join array back together
